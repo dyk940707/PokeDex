@@ -13,6 +13,9 @@
 		789AA077297783C4003C3BDB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 789AA075297783C4003C3BDB /* LaunchScreen.storyboard */; };
 		789AA07F29778DB3003C3BDB /* PokeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 789AA07E29778DB3003C3BDB /* PokeViewController.swift */; };
 		789AA08129778DDB003C3BDB /* Pokemon.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 789AA08029778DDB003C3BDB /* Pokemon.storyboard */; };
+		789AA0892977BF48003C3BDB /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 789AA0882977BF48003C3BDB /* APIService.swift */; };
+		789AA08C2977BF59003C3BDB /* PokemonAPI in Frameworks */ = {isa = PBXBuildFile; productRef = 789AA08B2977BF59003C3BDB /* PokemonAPI */; };
+		789AA08E2977BFCF003C3BDB /* Pokemon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 789AA08D2977BFCF003C3BDB /* Pokemon.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +27,8 @@
 		789AA078297783C4003C3BDB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		789AA07E29778DB3003C3BDB /* PokeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokeViewController.swift; sourceTree = "<group>"; };
 		789AA08029778DDB003C3BDB /* Pokemon.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Pokemon.storyboard; sourceTree = "<group>"; };
+		789AA0882977BF48003C3BDB /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
+		789AA08D2977BFCF003C3BDB /* Pokemon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pokemon.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +36,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				789AA08C2977BF59003C3BDB /* PokemonAPI in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,6 +62,7 @@
 		789AA069297783C3003C3BDB /* PokeDex */ = {
 			isa = PBXGroup;
 			children = (
+				789AA0872977BED0003C3BDB /* APIService */,
 				789AA0862977B409003C3BDB /* Configure */,
 				789AA0852977B3D5003C3BDB /* SupportedFile */,
 				789AA0842977B3C0003C3BDB /* Views */,
@@ -68,6 +75,7 @@
 		789AA0822977B3AC003C3BDB /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				789AA08D2977BFCF003C3BDB /* Pokemon.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -107,6 +115,14 @@
 			path = Configure;
 			sourceTree = "<group>";
 		};
+		789AA0872977BED0003C3BDB /* APIService */ = {
+			isa = PBXGroup;
+			children = (
+				789AA0882977BF48003C3BDB /* APIService.swift */,
+			);
+			path = APIService;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -123,6 +139,9 @@
 			dependencies = (
 			);
 			name = PokeDex;
+			packageProductDependencies = (
+				789AA08B2977BF59003C3BDB /* PokemonAPI */,
+			);
 			productName = PokeDex;
 			productReference = 789AA067297783C3003C3BDB /* PokeDex.app */;
 			productType = "com.apple.product-type.application";
@@ -151,6 +170,9 @@
 				Base,
 			);
 			mainGroup = 789AA05E297783C3003C3BDB;
+			packageReferences = (
+				789AA08A2977BF59003C3BDB /* XCRemoteSwiftPackageReference "PokemonAPI" */,
+			);
 			productRefGroup = 789AA068297783C3003C3BDB /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -178,8 +200,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				789AA08E2977BFCF003C3BDB /* Pokemon.swift in Sources */,
 				789AA07F29778DB3003C3BDB /* PokeViewController.swift in Sources */,
 				789AA06B297783C3003C3BDB /* AppDelegate.swift in Sources */,
+				789AA0892977BF48003C3BDB /* APIService.swift in Sources */,
 				789AA06D297783C3003C3BDB /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -396,6 +420,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		789AA08A2977BF59003C3BDB /* XCRemoteSwiftPackageReference "PokemonAPI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/kinkofer/PokemonAPI";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		789AA08B2977BF59003C3BDB /* PokemonAPI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 789AA08A2977BF59003C3BDB /* XCRemoteSwiftPackageReference "PokemonAPI" */;
+			productName = PokemonAPI;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 789AA05F297783C3003C3BDB /* Project object */;
 }
