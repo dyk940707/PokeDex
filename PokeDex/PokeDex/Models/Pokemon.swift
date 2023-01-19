@@ -15,4 +15,5 @@ struct Pokemon: Codable {
     var weight: Int?
     var height: Int?
     var baseExperience: Int?
+    var type: String?
 }

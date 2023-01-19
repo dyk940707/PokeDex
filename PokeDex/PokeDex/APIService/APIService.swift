@@ -23,7 +23,8 @@ struct APIService {
                             backImageUrl: pokemon.sprites?.backDefault,
                             weight: pokemon.weight,
                             height: pokemon.height,
-                            baseExperience: pokemon.baseExperience)
+                            baseExperience: pokemon.baseExperience,
+                                     type:pokemon.types?.first?.type?.name)
                     pokemons.append(po)
                     completion(pokemons)
                 case .failure(let error):
