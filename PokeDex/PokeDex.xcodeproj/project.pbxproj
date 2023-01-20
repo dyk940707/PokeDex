@@ -20,6 +20,8 @@
 		789AA0952978DB46003C3BDB /* ARCADECLASSIC.TTF in Resources */ = {isa = PBXBuildFile; fileRef = 789AA0942978DB46003C3BDB /* ARCADECLASSIC.TTF */; };
 		789AA0972978DBD1003C3BDB /* TwoColumnFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 789AA0962978DBD1003C3BDB /* TwoColumnFlowLayout.swift */; };
 		789AA09D2978DFFA003C3BDB /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 789AA09C2978DFFA003C3BDB /* Kingfisher */; };
+		789AA0A429794065003C3BDB /* LoadingReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 789AA0A229794065003C3BDB /* LoadingReusableView.swift */; };
+		789AA0A529794065003C3BDB /* LoadingReusableView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 789AA0A329794065003C3BDB /* LoadingReusableView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +38,8 @@
 		789AA0922978D8CB003C3BDB /* PokemonCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonCollectionViewCell.swift; sourceTree = "<group>"; };
 		789AA0942978DB46003C3BDB /* ARCADECLASSIC.TTF */ = {isa = PBXFileReference; lastKnownFileType = file; path = ARCADECLASSIC.TTF; sourceTree = "<group>"; };
 		789AA0962978DBD1003C3BDB /* TwoColumnFlowLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwoColumnFlowLayout.swift; sourceTree = "<group>"; };
+		789AA0A229794065003C3BDB /* LoadingReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingReusableView.swift; sourceTree = "<group>"; };
+		789AA0A329794065003C3BDB /* LoadingReusableView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoadingReusableView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +105,8 @@
 			children = (
 				789AA08029778DDB003C3BDB /* Pokemon.storyboard */,
 				789AA0922978D8CB003C3BDB /* PokemonCollectionViewCell.swift */,
+				789AA0A229794065003C3BDB /* LoadingReusableView.swift */,
+				789AA0A329794065003C3BDB /* LoadingReusableView.xib */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -200,6 +206,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				789AA0A529794065003C3BDB /* LoadingReusableView.xib in Resources */,
 				789AA077297783C4003C3BDB /* LaunchScreen.storyboard in Resources */,
 				789AA074297783C4003C3BDB /* Assets.xcassets in Resources */,
 				789AA08129778DDB003C3BDB /* Pokemon.storyboard in Resources */,
@@ -214,6 +221,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				789AA0A429794065003C3BDB /* LoadingReusableView.swift in Sources */,
 				789AA08E2977BFCF003C3BDB /* Pokemon.swift in Sources */,
 				789AA07F29778DB3003C3BDB /* PokeViewController.swift in Sources */,
 				789AA0972978DBD1003C3BDB /* TwoColumnFlowLayout.swift in Sources */,
